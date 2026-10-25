@@ -57,7 +57,7 @@ FROMRDF = [  # name, N-Quads-array input, purpose
     ('seq01', f'<{E}s> <{E}p> ("a" "b") .', 'a sequence of literals is a @list'),
     ('seq02', f'<{E}s> <{E}p> () .', 'the empty sequence is an empty @list'),
     ('seq03', f'<{E}s> <{E}p> (("a") ("b" "c")) .', 'nested sequences are nested @lists'),
-    ('seq04', f'<{E}s> <{E}p> (<{E}a> _:b) .\n_:b <{E}q> "c" .', 'IRI and blank node elements are node references'),
+    ('seq04', f'<{E}s> <{E}p> (<{E}a> _:b0) .\n_:b0 <{E}q> "c" .', 'IRI and blank node elements are node references'),
     # (string elements only: rdflib-array writes typed numbers as native JSON numbers, which JSON-LD's fromRdf does
     # only under useNativeTypes, and jsonld-streaming-parser-array cannot read a native number with an explicit @type)
     ('seq05', f'<{E}s> <{E}p> ("a") <{E}g> .', 'a sequence in a named graph'),
