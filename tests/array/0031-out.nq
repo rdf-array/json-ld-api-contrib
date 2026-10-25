@@ -1,0 +1,6 @@
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://example.org/ns#Wheel> .
+_:b1 <https://example.org/ns#n> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:b0 <https://example.org/ns#part> _:b1 .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://example.org/ns#Seat> .
+_:b2 <https://example.org/ns#n> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:b0 <https://example.org/ns#part> _:b2 .

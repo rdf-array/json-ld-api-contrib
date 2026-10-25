@@ -1,0 +1,4 @@
+_:b0 <http://schema.org/name> "C1" .
+_:b0 <https://example.org/ns#parent> <https://example.org/people/p> .
+_:b1 <http://schema.org/name> "C2" .
+_:b1 <https://example.org/ns#parent> <https://example.org/people/p> .

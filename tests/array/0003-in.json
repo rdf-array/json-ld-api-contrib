@@ -1,0 +1,1 @@
+{ "name": "Alice", "age": 42, "height": 1.70, "score": 0.5, "active": true, "born": "1984-02-29", "title": "Bonjour", "nickname": null, "raw": { "a": [1, 2] } }

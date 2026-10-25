@@ -1,0 +1,3 @@
+_:b2 <https://example.org/ns#mid-k> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:b1 <https://example.org/ns#inner> _:b2 .
+_:b0 <https://example.org/ns#mid> _:b1 .

@@ -1,0 +1,2 @@
+<http://ex.org/s> <http://ex.org/p> (<http://ex.org/a> _:b) .
+_:b <http://ex.org/q> "c" .

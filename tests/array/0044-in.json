@@ -1,0 +1,1 @@
+{ "mapping": { "prefixes": { "ex": "https://example.org/ns#" }, "propertyMap": { "n": "ex:n" } }, "n": 1 }

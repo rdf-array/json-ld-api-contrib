@@ -1,0 +1,4 @@
+<https://example.org/people/alice> <http://schema.org/name> "Alice" .
+_:b0 <https://example.org/ns#people> <https://example.org/people/alice> .
+<https://example.org/people/bob> <http://schema.org/name> "Bob" .
+_:b0 <https://example.org/ns#people> <https://example.org/people/bob> .

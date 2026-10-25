@@ -1,0 +1,10 @@
+<https://example.org/people/alice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<https://example.org/people/alice> <http://schema.org/name> "Alice" .
+<https://example.org/people/alice> <http://schema.org/age> "42"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/people/alice> <http://schema.org/birthDate> "1984-02-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://example.org/people/alice> <http://schema.org/url> <https://alice.example/> .
+<https://example.org/people/alice> <https://example.org/ns#tags> ("rdf" "json") .
+<https://example.org/people/alice> <http://schema.org/knows> (<https://example.org/people/alice/friends.ttl#Bob> <https://example.org/people/alice/friends.ttl#Eve>) .
+_:b0 <http://schema.org/addressLocality> "Paris" .
+_:b0 <http://schema.org/postalCode> "75001" .
+<https://example.org/people/alice> <http://schema.org/address> _:b0 .

@@ -1,0 +1,6 @@
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:b1 <https://example.org/ns#currency> "EUR" .
+_:b0 <https://example.org/ns#price> _:b1 .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "11"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:b2 <https://example.org/ns#currency> "USD" .
+_:b0 <https://example.org/ns#price> _:b2 .

@@ -1,0 +1,10 @@
+_:b0 <https://example.org/ns#tags> ("rdf" "json") .
+_:b0 <https://example.org/ns#none> () .
+_:b0 <https://example.org/ns#one> ("rdf") .
+_:b0 <https://example.org/ns#matrix> (("1"^^<http://www.w3.org/2001/XMLSchema#integer> "2"^^<http://www.w3.org/2001/XMLSchema#integer>) ("3"^^<http://www.w3.org/2001/XMLSchema#integer> "4"^^<http://www.w3.org/2001/XMLSchema#integer>)) .
+_:b1 <http://schema.org/name> "A" .
+_:b2 <http://schema.org/name> "B" .
+_:b0 <https://example.org/ns#members> (_:b1 _:b2) .
+_:b0 <https://example.org/ns#code> (<https://example.org/people/A1> <https://example.org/people/B2>) .
+_:b3 <https://example.org/ns#x> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:b0 <https://example.org/ns#mixed> ("a" "1"^^<http://www.w3.org/2001/XMLSchema#integer> _:b3) .

@@ -1,0 +1,365 @@
+{
+ "suite": "json-ld-api-contrib",
+ "tests": [
+  {
+   "test": "tests/toRdf-manifest#tli01",
+   "duplicates": [
+    "jsonld-streaming-parser-array test/JsonLdParser-test.ts \"a triple with an anonymous list array\""
+   ]
+  },
+  {
+   "test": "tests/toRdf-manifest#tli02",
+   "duplicates": [
+    "jsonld-streaming-parser-array test/JsonLdParser-test.ts \"without @id and an empty list\""
+   ]
+  },
+  {
+   "test": "tests/toRdf-manifest#tli05",
+   "duplicates": [
+    "jsonld-streaming-parser-array test/JsonLdParser-test.ts \"a list container\""
+   ]
+  },
+  {
+   "test": "tests/toRdf-manifest#tli08",
+   "duplicates": [
+    "jsonld-streaming-parser-array test/JsonLdParser-test.ts \"a list container\" \"with an inner predicate\""
+   ]
+  },
+  {
+   "test": "tests/fromRdf-manifest#tseq01",
+   "duplicates": [
+    "jsonld-streaming-serializer-array test/lib \"should emit a sequence term as a list (RDF-)\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0001",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the leading example (\u00a71) maps the inline form\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0002",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the leading example (\u00a71) maps the named-map form to the same quads\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0003",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array literals (\u00a75.1) maps strings, integers, decimals, booleans, dates and languages\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0004",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array literals (\u00a75.1) keeps a plain number's own spelling when there is no lexical form\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0005",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array literals (\u00a75.1) turns an exponent into a decimal lexical form\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0006",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array literals (\u00a75.1) refuses a fraction as xsd:integer\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0007",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) resolves an identifier against the base\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0008",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) expands an identifier template over a number\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0009",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) percent-encodes template values\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0010",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) percent-encodes template values\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0011",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) maps identifier values and foreign keys through templates\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0012",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) lets a key set the base of its object (role base)\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0013",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) resolves the identifier against the enclosing base and the members against the new one\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0014",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) rejects two identifier keys and two base-setting keys\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0015",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) rejects two identifier keys and two base-setting keys\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0016",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) maps a type key through the type map, spreading arrays\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0017",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) maps a type key through the type map, spreading arrays\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0018",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) applies unmappedTypes to unknown type values\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0019",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) applies unmappedTypes to unknown type values\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0020",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) applies unmappedTypes to unknown type values\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0021",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) types nodes by structure with class\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0022",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) flattens a wrapper object onto the current node\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0023",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) treats a flattened array as an envelope of root nodes\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0024",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) spreads an array under an inverse property\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0025",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array nodes, identifiers and bases (\u00a75.2) refuses a literal under an inverse property\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0026",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array arrays are sequences (\u00a75.3) maps arrays, empty, single, nested, of objects and of identifiers\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0027",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array arrays are sequences (\u00a75.3) gives every element of an array the property's language\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0028",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array dictionaries (\u00a75.4) keyed by identifier\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0029",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array dictionaries (\u00a75.4) keyed by language\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0030",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array dictionaries (\u00a75.4) keyed by a property, wrapping literal values\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0031",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array dictionaries (\u00a75.4) keyed by type\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0032",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array dictionaries (\u00a75.4) keyed by a predicate template\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0033",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) errors on a key outside its map under the default scope\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0034",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) errors on a key outside its map under the default scope\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0035",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) falls back to the root maps under scope root, and to enclosing maps under scope enclosing\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0036",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) falls back to the root maps under scope root, and to enclosing maps under scope enclosing\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0037",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) differs between root and enclosing when an intermediate map defines the key\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0038",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) differs between root and enclosing when an intermediate map defines the key\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0039",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) resolves named maps, recursively\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0040",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) rejects an unknown named map\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0041",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) applies a type-scoped map to its node only\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0042",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) applies a type-scoped map to its node only\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0043",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) reads an embedded propertyMap and an embedded mapping\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0044",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) reads an embedded propertyMap and an embedded mapping\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0045",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) ignores or vocab-expands unmapped keys as told\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0046",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array scopes (\u00a74, \u00a75.5) ignores or vocab-expands unmapped keys as told\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0047",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the conventions borrowed from RML (\u00a711.1) maps a flat record with object identifiers, groups, from, foreign keys, predicate templates and positions\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0048",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0049",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0050",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0051",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0052",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0053",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0054",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError\""
+   ]
+  },
+  {
+   "test": "tests/array-manifest#t0055",
+   "duplicates": [
+    "jsonld.js-array tests/array.js \"JSON-LD-array the mapping document (\u00a73) reports the path of an unmapped key\""
+   ]
+  }
+ ]
+}

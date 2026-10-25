@@ -1,0 +1,1 @@
+{ "id": 7, "first": "Ada", "last": "Lovelace", "street": "12 St James's Square", "city": "London", "bio": "Mathematician", "lang": "en", "editorId": 5, "works": [101, 102], "prices": { "GBP": 10, "EUR": 12 }, "phones": [{ "number": "+44 20 7946 0000" }, { "number": "+1 212 555 0100" }] }

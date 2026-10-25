@@ -1,0 +1,2 @@
+_:b0 <http://schema.org/url> <https://alice.example/> .
+_:b0 <http://schema.org/editor> <https://example.org/people/5> .

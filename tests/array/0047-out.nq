@@ -1,0 +1,18 @@
+<https://example.org/people/7> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+<https://example.org/people/7> <http://schema.org/address> _:address-of-7 .
+_:address-of-7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+_:address-of-7 <http://schema.org/streetAddress> "12 St James's Square" .
+_:address-of-7 <http://schema.org/addressLocality> "London" .
+<https://example.org/people/7> <http://schema.org/givenName> "Ada" .
+<https://example.org/people/7> <http://schema.org/familyName> "Lovelace" .
+<https://example.org/people/7> <http://schema.org/description> "Mathematician"@en .
+<https://example.org/people/7> <http://schema.org/editor> <https://example.org/people/5> .
+<https://example.org/works/101> <http://schema.org/author> <https://example.org/people/7> .
+<https://example.org/works/102> <http://schema.org/author> <https://example.org/people/7> .
+<https://example.org/people/7> <https://example.org/ns#price-GBP> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/people/7> <https://example.org/ns#price-EUR> "12"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://example.org/people/7/phone/1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> .
+<https://example.org/people/7/phone/1> <http://schema.org/telephone> "+44 20 7946 0000" .
+<https://example.org/people/7/phone/2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/ContactPoint> .
+<https://example.org/people/7/phone/2> <http://schema.org/telephone> "+1 212 555 0100" .
+<https://example.org/people/7> <http://schema.org/contactPoint> (<https://example.org/people/7/phone/1> <https://example.org/people/7/phone/2>) .

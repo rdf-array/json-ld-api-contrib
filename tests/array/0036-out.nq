@@ -1,0 +1,3 @@
+_:b1 <http://schema.org/legalName> "ACME" .
+_:b1 <http://schema.org/addressLocality> "Lyon" .
+_:b0 <http://schema.org/worksFor> _:b1 .

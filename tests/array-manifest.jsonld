@@ -1,0 +1,680 @@
+{
+  "@context": [
+    "https://w3c.github.io/json-ld-api/tests/context.jsonld",
+    {
+      "@base": "array-manifest",
+      "ra": "https://rdf-array.github.io/rdf-array/vocab#",
+      "mapping": {
+        "@id": "ra:mapping",
+        "@type": "@id"
+      }
+    }
+  ],
+  "@id": "",
+  "@type": "mf:Manifest",
+  "name": "rdf-array: JSON-LD-array to rdf-array",
+  "description": "Conventional JSON and a JSON-LD-array mapping to rdf-array (https://rdf-array.github.io/rdf-array/json-ld-array.html); the input is plain JSON, \"mapping\" the mapping document, \"expect\" N-Quads-array or \"expectErrorCode\" the error code of \u00a73.7.",
+  "baseIri": "https://rdf-array.github.io/json-ld-api-contrib/tests/",
+  "sequence": [
+    {
+      "@id": "#t0001",
+      "name": "the-leading-example-maps-the-inline-form",
+      "purpose": "rdf-array: JSON-LD-array the leading example (\u00a71) maps the inline form",
+      "input": "array/0001-in.json",
+      "mapping": "array/0001-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0001-out.nq"
+    },
+    {
+      "@id": "#t0002",
+      "name": "the-leading-example-maps-the-named-map-form-to-the-same-quad",
+      "purpose": "rdf-array: JSON-LD-array the leading example (\u00a71) maps the named-map form to the same quads",
+      "input": "array/0002-in.json",
+      "mapping": "array/0002-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0002-out.nq"
+    },
+    {
+      "@id": "#t0003",
+      "name": "literals-maps-strings-integers-decimals-booleans-dates-and-l",
+      "purpose": "rdf-array: JSON-LD-array literals (\u00a75.1) maps strings, integers, decimals, booleans, dates and languages",
+      "input": "array/0003-in.json",
+      "mapping": "array/0003-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0003-out.nq"
+    },
+    {
+      "@id": "#t0004",
+      "name": "literals-keeps-a-plain-number-s-own-spelling-when-there-is-n",
+      "purpose": "rdf-array: JSON-LD-array literals (\u00a75.1) keeps a plain number's own spelling when there is no lexical form",
+      "input": "array/0004-in.json",
+      "mapping": "array/0004-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0004-out.nq"
+    },
+    {
+      "@id": "#t0005",
+      "name": "literals-turns-an-exponent-into-a-decimal-lexical-form",
+      "purpose": "rdf-array: JSON-LD-array literals (\u00a75.1) turns an exponent into a decimal lexical form",
+      "input": "array/0005-in.json",
+      "mapping": "array/0005-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0005-out.nq"
+    },
+    {
+      "@id": "#t0006",
+      "name": "literals-refuses-a-fraction-as-xsd-integer",
+      "purpose": "rdf-array: JSON-LD-array literals (\u00a75.1) refuses a fraction as xsd:integer",
+      "input": "array/0006-in.json",
+      "mapping": "array/0006-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "invalid literal"
+    },
+    {
+      "@id": "#t0007",
+      "name": "nodes-identifiers-and-bases-resolves-an-identifier-against-t",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) resolves an identifier against the base",
+      "input": "array/0007-in.json",
+      "mapping": "array/0007-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0007-out.nq"
+    },
+    {
+      "@id": "#t0008",
+      "name": "nodes-identifiers-and-bases-expands-an-identifier-template-o",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) expands an identifier template over a number",
+      "input": "array/0008-in.json",
+      "mapping": "array/0008-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0008-out.nq"
+    },
+    {
+      "@id": "#t0009",
+      "name": "nodes-identifiers-and-bases-percent-encodes-template-values",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) percent-encodes template values",
+      "input": "array/0009-in.json",
+      "mapping": "array/0009-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0009-out.nq"
+    },
+    {
+      "@id": "#t0010",
+      "name": "nodes-identifiers-and-bases-percent-encodes-template-values",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) percent-encodes template values",
+      "input": "array/0010-in.json",
+      "mapping": "array/0010-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0010-out.nq"
+    },
+    {
+      "@id": "#t0011",
+      "name": "nodes-identifiers-and-bases-maps-identifier-values-and-forei",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) maps identifier values and foreign keys through templates",
+      "input": "array/0011-in.json",
+      "mapping": "array/0011-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0011-out.nq"
+    },
+    {
+      "@id": "#t0012",
+      "name": "nodes-identifiers-and-bases-lets-a-key-set-the-base-of-its-o",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) lets a key set the base of its object (role base)",
+      "input": "array/0012-in.json",
+      "mapping": "array/0012-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0012-out.nq"
+    },
+    {
+      "@id": "#t0013",
+      "name": "nodes-identifiers-and-bases-resolves-the-identifier-against-",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) resolves the identifier against the enclosing base and the members against the new one",
+      "input": "array/0013-in.json",
+      "mapping": "array/0013-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0013-out.nq"
+    },
+    {
+      "@id": "#t0014",
+      "name": "nodes-identifiers-and-bases-rejects-two-identifier-keys-and-",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) rejects two identifier keys and two base-setting keys",
+      "input": "array/0014-in.json",
+      "mapping": "array/0014-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "two identifiers"
+    },
+    {
+      "@id": "#t0015",
+      "name": "nodes-identifiers-and-bases-rejects-two-identifier-keys-and-",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) rejects two identifier keys and two base-setting keys",
+      "input": "array/0015-in.json",
+      "mapping": "array/0015-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "two bases"
+    },
+    {
+      "@id": "#t0016",
+      "name": "nodes-identifiers-and-bases-maps-a-type-key-through-the-type",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) maps a type key through the type map, spreading arrays",
+      "input": "array/0016-in.json",
+      "mapping": "array/0016-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0016-out.nq"
+    },
+    {
+      "@id": "#t0017",
+      "name": "nodes-identifiers-and-bases-maps-a-type-key-through-the-type",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) maps a type key through the type map, spreading arrays",
+      "input": "array/0017-in.json",
+      "mapping": "array/0017-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0017-out.nq"
+    },
+    {
+      "@id": "#t0018",
+      "name": "nodes-identifiers-and-bases-applies-unmappedtypes-to-unknown",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) applies unmappedTypes to unknown type values",
+      "input": "array/0018-in.json",
+      "mapping": "array/0018-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "unmapped type"
+    },
+    {
+      "@id": "#t0019",
+      "name": "nodes-identifiers-and-bases-applies-unmappedtypes-to-unknown",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) applies unmappedTypes to unknown type values",
+      "input": "array/0019-in.json",
+      "mapping": "array/0019-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0019-out.nq"
+    },
+    {
+      "@id": "#t0020",
+      "name": "nodes-identifiers-and-bases-applies-unmappedtypes-to-unknown",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) applies unmappedTypes to unknown type values",
+      "input": "array/0020-in.json",
+      "mapping": "array/0020-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0020-out.nq"
+    },
+    {
+      "@id": "#t0021",
+      "name": "nodes-identifiers-and-bases-types-nodes-by-structure-with-cl",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) types nodes by structure with class",
+      "input": "array/0021-in.json",
+      "mapping": "array/0021-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0021-out.nq"
+    },
+    {
+      "@id": "#t0022",
+      "name": "nodes-identifiers-and-bases-flattens-a-wrapper-object-onto-t",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) flattens a wrapper object onto the current node",
+      "input": "array/0022-in.json",
+      "mapping": "array/0022-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0022-out.nq"
+    },
+    {
+      "@id": "#t0023",
+      "name": "nodes-identifiers-and-bases-treats-a-flattened-array-as-an-e",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) treats a flattened array as an envelope of root nodes",
+      "input": "array/0023-in.json",
+      "mapping": "array/0023-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0023-out.nq"
+    },
+    {
+      "@id": "#t0024",
+      "name": "nodes-identifiers-and-bases-spreads-an-array-under-an-invers",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) spreads an array under an inverse property",
+      "input": "array/0024-in.json",
+      "mapping": "array/0024-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0024-out.nq"
+    },
+    {
+      "@id": "#t0025",
+      "name": "nodes-identifiers-and-bases-refuses-a-literal-under-an-inver",
+      "purpose": "rdf-array: JSON-LD-array nodes, identifiers and bases (\u00a75.2) refuses a literal under an inverse property",
+      "input": "array/0025-in.json",
+      "mapping": "array/0025-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "literal subject"
+    },
+    {
+      "@id": "#t0026",
+      "name": "arrays-are-sequences-maps-arrays-empty-single-nested-of-obje",
+      "purpose": "rdf-array: JSON-LD-array arrays are sequences (\u00a75.3) maps arrays, empty, single, nested, of objects and of identifiers",
+      "input": "array/0026-in.json",
+      "mapping": "array/0026-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0026-out.nq"
+    },
+    {
+      "@id": "#t0027",
+      "name": "arrays-are-sequences-gives-every-element-of-an-array-the-pro",
+      "purpose": "rdf-array: JSON-LD-array arrays are sequences (\u00a75.3) gives every element of an array the property's language",
+      "input": "array/0027-in.json",
+      "mapping": "array/0027-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0027-out.nq"
+    },
+    {
+      "@id": "#t0028",
+      "name": "dictionaries-keyed-by-identifier",
+      "purpose": "rdf-array: JSON-LD-array dictionaries (\u00a75.4) keyed by identifier",
+      "input": "array/0028-in.json",
+      "mapping": "array/0028-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0028-out.nq"
+    },
+    {
+      "@id": "#t0029",
+      "name": "dictionaries-keyed-by-language",
+      "purpose": "rdf-array: JSON-LD-array dictionaries (\u00a75.4) keyed by language",
+      "input": "array/0029-in.json",
+      "mapping": "array/0029-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0029-out.nq"
+    },
+    {
+      "@id": "#t0030",
+      "name": "dictionaries-keyed-by-a-property-wrapping-literal-values",
+      "purpose": "rdf-array: JSON-LD-array dictionaries (\u00a75.4) keyed by a property, wrapping literal values",
+      "input": "array/0030-in.json",
+      "mapping": "array/0030-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0030-out.nq"
+    },
+    {
+      "@id": "#t0031",
+      "name": "dictionaries-keyed-by-type",
+      "purpose": "rdf-array: JSON-LD-array dictionaries (\u00a75.4) keyed by type",
+      "input": "array/0031-in.json",
+      "mapping": "array/0031-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0031-out.nq"
+    },
+    {
+      "@id": "#t0032",
+      "name": "dictionaries-keyed-by-a-predicate-template",
+      "purpose": "rdf-array: JSON-LD-array dictionaries (\u00a75.4) keyed by a predicate template",
+      "input": "array/0032-in.json",
+      "mapping": "array/0032-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0032-out.nq"
+    },
+    {
+      "@id": "#t0033",
+      "name": "scopes-errors-on-a-key-outside-its-map-under-the-default-sco",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) errors on a key outside its map under the default scope",
+      "input": "array/0033-in.json",
+      "mapping": "array/0033-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "unmapped key"
+    },
+    {
+      "@id": "#t0034",
+      "name": "scopes-errors-on-a-key-outside-its-map-under-the-default-sco",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) errors on a key outside its map under the default scope",
+      "input": "array/0034-in.json",
+      "mapping": "array/0034-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "unmapped key"
+    },
+    {
+      "@id": "#t0035",
+      "name": "scopes-falls-back-to-the-root-maps-under-scope-root-and-to-e",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) falls back to the root maps under scope root, and to enclosing maps under scope enclosing",
+      "input": "array/0035-in.json",
+      "mapping": "array/0035-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0035-out.nq"
+    },
+    {
+      "@id": "#t0036",
+      "name": "scopes-falls-back-to-the-root-maps-under-scope-root-and-to-e",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) falls back to the root maps under scope root, and to enclosing maps under scope enclosing",
+      "input": "array/0036-in.json",
+      "mapping": "array/0036-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0036-out.nq"
+    },
+    {
+      "@id": "#t0037",
+      "name": "scopes-differs-between-root-and-enclosing-when-an-intermedia",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) differs between root and enclosing when an intermediate map defines the key",
+      "input": "array/0037-in.json",
+      "mapping": "array/0037-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0037-out.nq"
+    },
+    {
+      "@id": "#t0038",
+      "name": "scopes-differs-between-root-and-enclosing-when-an-intermedia",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) differs between root and enclosing when an intermediate map defines the key",
+      "input": "array/0038-in.json",
+      "mapping": "array/0038-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0038-out.nq"
+    },
+    {
+      "@id": "#t0039",
+      "name": "scopes-resolves-named-maps-recursively",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) resolves named maps, recursively",
+      "input": "array/0039-in.json",
+      "mapping": "array/0039-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0039-out.nq"
+    },
+    {
+      "@id": "#t0040",
+      "name": "scopes-rejects-an-unknown-named-map",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) rejects an unknown named map",
+      "input": "array/0040-in.json",
+      "mapping": "array/0040-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "unknown named map"
+    },
+    {
+      "@id": "#t0041",
+      "name": "scopes-applies-a-type-scoped-map-to-its-node-only",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) applies a type-scoped map to its node only",
+      "input": "array/0041-in.json",
+      "mapping": "array/0041-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0041-out.nq"
+    },
+    {
+      "@id": "#t0042",
+      "name": "scopes-applies-a-type-scoped-map-to-its-node-only",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) applies a type-scoped map to its node only",
+      "input": "array/0042-in.json",
+      "mapping": "array/0042-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "unmapped key"
+    },
+    {
+      "@id": "#t0043",
+      "name": "scopes-reads-an-embedded-propertymap-and-an-embedded-mapping",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) reads an embedded propertyMap and an embedded mapping",
+      "input": "array/0043-in.json",
+      "mapping": "array/0043-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0043-out.nq"
+    },
+    {
+      "@id": "#t0044",
+      "name": "scopes-reads-an-embedded-propertymap-and-an-embedded-mapping",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) reads an embedded propertyMap and an embedded mapping",
+      "input": "array/0044-in.json",
+      "mapping": "array/0044-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0044-out.nq"
+    },
+    {
+      "@id": "#t0045",
+      "name": "scopes-ignores-or-vocab-expands-unmapped-keys-as-told",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) ignores or vocab-expands unmapped keys as told",
+      "input": "array/0045-in.json",
+      "mapping": "array/0045-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0045-out.nq"
+    },
+    {
+      "@id": "#t0046",
+      "name": "scopes-ignores-or-vocab-expands-unmapped-keys-as-told",
+      "purpose": "rdf-array: JSON-LD-array scopes (\u00a74, \u00a75.5) ignores or vocab-expands unmapped keys as told",
+      "input": "array/0046-in.json",
+      "mapping": "array/0046-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0046-out.nq"
+    },
+    {
+      "@id": "#t0047",
+      "name": "the-conventions-borrowed-from-rml-maps-a-flat-record-with-ob",
+      "purpose": "rdf-array: JSON-LD-array the conventions borrowed from RML (\u00a711.1) maps a flat record with object identifiers, groups, from, foreign keys, predicate templates and positions",
+      "input": "array/0047-in.json",
+      "mapping": "array/0047-mapping.json",
+      "@type": [
+        "jld:PositiveEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expect": "array/0047-out.nq"
+    },
+    {
+      "@id": "#t0048",
+      "name": "the-mapping-document-rejects-malformed-mappings-with-jsonld-",
+      "purpose": "rdf-array: JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError",
+      "input": "array/0048-in.json",
+      "mapping": "array/0048-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "invalid mapping"
+    },
+    {
+      "@id": "#t0049",
+      "name": "the-mapping-document-rejects-malformed-mappings-with-jsonld-",
+      "purpose": "rdf-array: JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError",
+      "input": "array/0049-in.json",
+      "mapping": "array/0049-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "invalid mapping"
+    },
+    {
+      "@id": "#t0050",
+      "name": "the-mapping-document-rejects-malformed-mappings-with-jsonld-",
+      "purpose": "rdf-array: JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError",
+      "input": "array/0050-in.json",
+      "mapping": "array/0050-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "invalid mapping"
+    },
+    {
+      "@id": "#t0051",
+      "name": "the-mapping-document-rejects-malformed-mappings-with-jsonld-",
+      "purpose": "rdf-array: JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError",
+      "input": "array/0051-in.json",
+      "mapping": "array/0051-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "invalid mapping"
+    },
+    {
+      "@id": "#t0052",
+      "name": "the-mapping-document-rejects-malformed-mappings-with-jsonld-",
+      "purpose": "rdf-array: JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError",
+      "input": "array/0052-in.json",
+      "mapping": "array/0052-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "invalid mapping"
+    },
+    {
+      "@id": "#t0053",
+      "name": "the-mapping-document-rejects-malformed-mappings-with-jsonld-",
+      "purpose": "rdf-array: JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError",
+      "input": "array/0053-in.json",
+      "mapping": "array/0053-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "invalid mapping"
+    },
+    {
+      "@id": "#t0054",
+      "name": "the-mapping-document-rejects-malformed-mappings-with-jsonld-",
+      "purpose": "rdf-array: JSON-LD-array the mapping document (\u00a73) rejects malformed mappings with jsonld.ArrayMappingError",
+      "input": "array/0054-in.json",
+      "mapping": "array/0054-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "invalid mapping"
+    },
+    {
+      "@id": "#t0055",
+      "name": "the-mapping-document-reports-the-path-of-an-unmapped-key",
+      "purpose": "rdf-array: JSON-LD-array the mapping document (\u00a73) reports the path of an unmapped key",
+      "input": "array/0055-in.json",
+      "mapping": "array/0055-mapping.json",
+      "@type": [
+        "jld:NegativeEvaluationTest",
+        "ra:JsonLdArrayToRdfTest"
+      ],
+      "expectErrorCode": "unmapped key"
+    }
+  ]
+}

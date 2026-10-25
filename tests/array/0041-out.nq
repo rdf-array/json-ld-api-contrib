@@ -1,0 +1,5 @@
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://example.org/ns#Circle> .
+_:b1 <https://example.org/ns#radius> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://example.org/ns#Square> .
+_:b2 <https://example.org/ns#side> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:b0 <https://example.org/ns#shapes> (_:b1 _:b2) .

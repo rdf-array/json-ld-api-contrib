@@ -1,0 +1,1 @@
+{ "id": "alice", "type": "Person", "name": "Alice", "age": 42, "born": "1984-02-29", "homepage": "https://alice.example/", "tags": ["rdf", "json"], "knows": ["Bob", "Eve"], "address": { "city": "Paris", "zip": "75001" } }

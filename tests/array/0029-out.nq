@@ -1,0 +1,2 @@
+_:b0 <http://www.w3.org/2000/01/rdf-schema#label> "Dog"@en .
+_:b0 <http://www.w3.org/2000/01/rdf-schema#label> "Hund"@de .

@@ -1,0 +1,2 @@
+_:b0 <https://example.org/ns#main> <https://docs.example/alice/cv.html> .
+<https://example.org/people/alice> <https://example.org/ns#docs> _:b0 .

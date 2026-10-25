@@ -1,0 +1,6 @@
+_:b0 <https://example.org/ns#text> "root" .
+_:b1 <https://example.org/ns#text> "child" .
+_:b2 <https://example.org/ns#text> "grandchild" .
+_:b2 <https://example.org/ns#replies> () .
+_:b1 <https://example.org/ns#replies> (_:b2) .
+_:b0 <https://example.org/ns#replies> (_:b1) .
