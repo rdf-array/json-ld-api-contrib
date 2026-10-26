@@ -145,7 +145,7 @@ def main():
         entries.append({'@id': f'#t{name}', '@type': ['jld:PositiveEvaluationTest', 'jld:FromRDFTest'], 'name': name,
                         'purpose': f'rdf-array: {purpose}', 'input': f'fromRdf/{name}-in.nq', 'expect': f'fromRdf/{name}-out.jsonld',
                         'option': {'specVersion': 'json-ld-1.1'}})
-        dups.append({'test': f'tests/fromRdf-manifest#t{name}', 'duplicates': [f'{JS} "should emit a sequence term as a list (RDF-)"'] if name == 'seq01' else []})
+        dups.append({'test': f'tests/fromRdf-manifest#t{name}', 'duplicates': [f'{JS} "should emit a sequence term as a list (rdf-array)"'] if name == 'seq01' else []})
     write('tests/fromRdf-manifest.jsonld', manifest('fromRdf-manifest', 'rdf-array: Transform RDF to JSON-LD (sequences)',
           'rdf-array to JSON-LD: a sequence term is a @list.', entries))
     dups = [d for d in dups if d['duplicates']]

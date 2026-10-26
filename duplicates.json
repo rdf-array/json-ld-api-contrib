@@ -28,7 +28,7 @@
   {
    "test": "tests/fromRdf-manifest#tseq01",
    "duplicates": [
-    "jsonld-streaming-serializer-array test/lib \"should emit a sequence term as a list (RDF-)\""
+    "jsonld-streaming-serializer-array test/lib \"should emit a sequence term as a list (rdf-array)\""
    ]
   },
   {
