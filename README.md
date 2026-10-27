@@ -11,7 +11,7 @@ with the same manifest format, so a runner of one runs the other. Published at
 |---|---|
 | [tests/toRdf-manifest.jsonld](tests/toRdf-manifest.jsonld) | JSON-LD to N-Quads-array: lists, empty and nested lists, `@container: @list`, null elements, node objects, named graphs |
 | [tests/fromRdf-manifest.jsonld](tests/fromRdf-manifest.jsonld) | N-Quads-array to expanded JSON-LD: a sequence is a `@list` |
-| [tests/array-manifest.jsonld](tests/array-manifest.jsonld) | [JSON-LD-array](https://rdf-array.github.io/rdf-array/json-ld-array.html): conventional JSON and a mapping document to N-Quads-array, or the error code of its §3.7; type `ra:JsonLdArrayToRdfTest`, with the mapping in `"mapping"` |
+| [tests/array-manifest.jsonld](tests/array-manifest.jsonld) | [JSON-LD-array](https://rdf-array.github.io/rdf-array/docs/json-ld-array.html): conventional JSON and a mapping document to N-Quads-array, or the error code of its §3.7; type `ra:JsonLdArrayToRdfTest`, with the mapping in `"mapping"` |
 
 ## How the expectations were made
 

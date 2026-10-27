@@ -13,7 +13,7 @@
   "@id": "",
   "@type": "mf:Manifest",
   "name": "rdf-array: JSON-LD-array to rdf-array",
-  "description": "Conventional JSON and a JSON-LD-array mapping to rdf-array (https://rdf-array.github.io/rdf-array/json-ld-array.html); the input is plain JSON, \"mapping\" the mapping document, \"expect\" N-Quads-array or \"expectErrorCode\" the error code of \u00a73.7.",
+  "description": "Conventional JSON and a JSON-LD-array mapping to rdf-array (https://rdf-array.github.io/rdf-array/docs/json-ld-array.html); the input is plain JSON, \"mapping\" the mapping document, \"expect\" N-Quads-array or \"expectErrorCode\" the error code of \u00a73.7.",
   "baseIri": "https://rdf-array.github.io/json-ld-api-contrib/tests/",
   "sequence": [
     {

@@ -216,7 +216,7 @@ def build_array(problems, dups):
         entries.append(e)
         dups.append({'test': f'tests/array-manifest#t{n}', 'duplicates': [f'jsonld.js-array tests/array.js "{c["title"]}"']})
     write('tests/array-manifest.jsonld', manifest('array-manifest', 'rdf-array: JSON-LD-array to rdf-array',
-          'Conventional JSON and a JSON-LD-array mapping to rdf-array (https://rdf-array.github.io/rdf-array/json-ld-array.html); '
+          'Conventional JSON and a JSON-LD-array mapping to rdf-array (https://rdf-array.github.io/rdf-array/docs/json-ld-array.html); '
           'the input is plain JSON, "mapping" the mapping document, "expect" N-Quads-array or "expectErrorCode" the error code of §3.7.',
           entries, {'ra': 'https://rdf-array.github.io/rdf-array/vocab#', 'mapping': {'@id': 'ra:mapping', '@type': '@id'}}))
     ARRAY_COUNT[0] = len(entries)
