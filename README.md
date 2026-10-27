@@ -23,5 +23,5 @@ only implementation so far. `python3 bin/build.py --check` rebuilds and fails if
 
 Two rdflib-array number quirks, not list matters, are kept out of the cases: it writes the double `1.5` as
 `"1.5"` (JSON-LD's canonical form is `"1.5E0"`), and its fromRdf writes typed numbers as native JSON numbers.
-[contrib-duplicates.md](https://github.com/rdf-array/rdf-array/blob/main/contrib-duplicates.md) in
+[contrib-duplicates.md](https://github.com/rdf-array/rdf-array/blob/main/management/contrib-duplicates.md) in
 rdf-array/rdf-array lists which implementation test each case reproduces.
